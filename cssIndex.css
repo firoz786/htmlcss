@@ -1,0 +1,47 @@
+.main {
+    background-color: red;
+    width: 500px;
+    height: 500px;
+}
+#parent-row-1 {
+    width: 500px;
+    height: 250px;
+    background-color: yellow;
+}
+#parent-row-2 {
+    width: 500px;
+    height: 250px;
+    background-color: aqua;
+}
+.col1 {
+    background-color: brown;
+    width: 250px;
+    height: 250px;
+    float: left;
+}
+.col2 {
+    background-color: rgb(42, 165, 85);
+    width: 250px;
+    height: 250px;
+    float: right;
+    color: rgb(100, 14, 212);
+}
+.text {
+    font-size: 22px;
+    color: rgb(239, 15, 15);
+    font-style: oblique;
+    font-weight: bold;
+    background-color: rgb(183, 178, 176);
+    width: 155px;
+    text-decoration: underline;
+}
+.para {
+    width: 500px;
+    height: 300px;
+    background-color: rgb(190, 20, 20);
+    color: white;
+    font-size: 22px;
+    text-align: justify;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+}
