@@ -1,74 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .main{
-            width: 500px;
-            border:10px solid red;
-            padding:10px;
-            margin:30px;
-            background-color: aquamarine;
-            transform: translate(400px,40px);
-        }
-        .grid-row{
-            width: 800px;
-            height: 600px;
-            border:2px solid red;
-            margin:auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-        }
-        .grid-row div{
-            padding:50px;
-            font-size: 50px;
-            background-color: aqua;
-            border:solid red 1px
-        }
-          
-        .grid-column{
-            width: 800px;
-            height: 600px;
-            border:2px solid red;
-            margin:auto;
-            display: grid;
-            grid-template-columns: auto auto auto 
-        }
-        .grid-column div{
-            padding:50px;
-            font-size: 50px;
-            background-color: aqua;
-            border:solid red 1px
-        }
-    </style>
-</head>
-<body>
-    <div class="main"> transform: translate(400px,40px);</div>
-    <br>    <br>
-    =================================================
-    <div class="grid-row">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-        <div>8</div>
-    </div>
-    <div class="grid-column">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
-    </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.main {
+				width: 500px;
+				border: 10px solid red;
+				padding: 10px;
+				margin: 30px;
+				background-color: aquamarine;
+				transform: translate(400px, 40px);
+			}
+			.grid-row {
+				width: 800px;
+				height: 600px;
+				border: 2px solid red;
+				margin: auto;
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+			}
+			.grid-row div {
+				padding: 50px;
+				font-size: 50px;
+				background-color: aqua;
+				border: solid red 1px;
+				/* border-radius: 50px; */
+			}
+
+			.grid-column {
+				width: 800px;
+				height: 600px;
+				border: 2px solid red;
+				margin: auto;
+				display: grid;
+				grid-template-columns: auto auto auto;
+				/* grid-column-gap:22px;
+            grid-row-gap:22px; */
+				grid-gap: 10px 20px;
+			}
+			.grid-column div {
+				padding: 50px;
+				font-size: 50px;
+				background-color: aqua;
+				border: solid red 1px;
+			}
+			#div-row {
+				grid-row-start: 1;
+				grid-row-end: 3;
+			}
+			/* for adding row3,col2 till row3,col3 */
+			#div-col {
+				grid-column-start: 2;
+				grid-column-end: 4;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">transform: translate(400px,40px);</div>
+		<br />
+		<br />
+		=================================================
+		<div class="grid-row">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+		</div>
+		<div class="grid-column">
+			<div id="div-row">1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div id="div-col">7 </div>
+			<!-- <div>8</div> -->
+			<!-- <div>9</div> -->
+		</div>
+	</body>
 </html>
